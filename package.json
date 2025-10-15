@@ -1,9 +1,10 @@
 {
   "name": "study-react-js",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "d": "vite",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
