@@ -1,24 +1,9 @@
-import { useState } from "react"
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  function add(): void {
-    setCount(count+1)
-    console.log(count)
-  }
-
+export function App() {
   return (
     <>
-      <p>Hello world</p>
-      <button onClick={() => setCount(count+1)}>
-        Count is {count}
-      </button>
-      <button onClick={() => add()}>
-        Another Count is {count}
-      </button>
+      <h2>Hello world</h2>
     </>
   )
 }
-
-export default App
