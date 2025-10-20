@@ -5,6 +5,17 @@ export function App() {
   return (
     <div>
       <h2>Hello world</h2>
+
+      {teste()}
+      <br />
+      {useTest()}
+      <br />
+      {useTestHook()}
+      <br />
+
+      {MyComponent()}
+      <MyComponent></MyComponent>
+      <MyName></MyName>
     </div>
   )
 }
@@ -32,6 +43,22 @@ const MyComponent = () => {
   return (
     <div>
       <h1>This is my Component</h1>
+    </div>
+  )
+}
+
+function MyName() {
+  return (
+    <div>
+      <h2>My name is Vila</h2>
+    </div>
+  )
+}
+
+const MyAge = (age: number) => {
+  return (
+    <div>
+      <h2>My name is {age}</h2>
     </div>
   )
 }
